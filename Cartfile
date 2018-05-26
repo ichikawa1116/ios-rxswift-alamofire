@@ -1,0 +1,7 @@
+github "Alamofire/Alamofire"
+github "Hearst-DD/ObjectMapper"
+github "ReactiveX/RxSwift"
+github "Alamofire/AlamofireImage"
+github "ashleymills/Reachability.swift"
+github "realm/realm-cocoa"
+

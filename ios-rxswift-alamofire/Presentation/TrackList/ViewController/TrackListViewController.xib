@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TrackListViewController" customModule="ios_rxswift_alamofire" customModuleProvider="target">
+            <connections>
+                <outlet property="coverView" destination="fdz-Da-t1B" id="Gri-oT-5PR"/>
+                <outlet property="searchBar" destination="4TN-ev-FE0" id="BLe-rO-rwh"/>
+                <outlet property="trackListTableView" destination="gve-nC-Xol" id="bJa-c6-Pqq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gve-nC-Xol">
+                    <rect key="frame" x="0.0" y="56" width="375" height="611"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="4TN-ev-FE0">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="Dxf-ye-9xg"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fdz-Da-t1B">
+                    <rect key="frame" x="0.0" y="56" width="375" height="611"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="該当の音楽が見つかりません。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fK7-Xg-2VV">
+                            <rect key="frame" x="66" y="295.5" width="243" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="fK7-Xg-2VV" firstAttribute="centerX" secondItem="fdz-Da-t1B" secondAttribute="centerX" id="OGz-ap-tDM"/>
+                        <constraint firstItem="fK7-Xg-2VV" firstAttribute="centerY" secondItem="fdz-Da-t1B" secondAttribute="centerY" id="yYK-VH-dg6"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fdz-Da-t1B" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Awc-Z8-jPE"/>
+                <constraint firstItem="gve-nC-Xol" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="JUu-cg-ejK"/>
+                <constraint firstItem="fdz-Da-t1B" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="LeQ-py-wbP"/>
+                <constraint firstItem="gve-nC-Xol" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="SXK-uu-O3E"/>
+                <constraint firstItem="4TN-ev-FE0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="UO3-Pw-Mut"/>
+                <constraint firstItem="gve-nC-Xol" firstAttribute="top" secondItem="4TN-ev-FE0" secondAttribute="bottom" id="WTK-Sc-iZ8"/>
+                <constraint firstItem="fdz-Da-t1B" firstAttribute="top" secondItem="4TN-ev-FE0" secondAttribute="bottom" id="WVr-rf-QnQ"/>
+                <constraint firstItem="4TN-ev-FE0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="bao-vI-Drg"/>
+                <constraint firstItem="4TN-ev-FE0" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="dGY-Wj-qxe"/>
+                <constraint firstItem="gve-nC-Xol" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="qTs-cF-7U2"/>
+                <constraint firstItem="fdz-Da-t1B" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="uFD-es-YdY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="33.5" y="165.5"/>
+        </view>
+    </objects>
+</document>
